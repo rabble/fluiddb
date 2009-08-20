@@ -15,11 +15,10 @@ require 'fluiddb/version'
 require 'fluiddb/base'
 
 module FluidDB
-  API_URL     = "http://fluiddb.fluidinfo.com/"
+  API_DOMAIN     = "fluiddb.fluidinfo.com"
     
-  class << self
-    attr_accessor :username, :password, :debug
-  end
+  attr_accessor :username, :password, :debug
+  
 
   class BadRequest           < StandardError; end
   class NotFound             < StandardError; end
